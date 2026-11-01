@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRUMB STUDIO | Artisan Bakery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="#home" class="logo" id="bakery-name">
+                CRUMB STUDIO
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#price-list">Price List</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HOME / HERO -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    ARTISAN BAKERY & PATISSERIE
+                </span>
+
+                <h1>
+                    A Little Crumb,
+                    <br>
+                    A Lot of Love.
+                </h1>
+
+                <p id="bakery-tagline">
+                    Freshly baked, made with love.
+                </p>
+
+                <a href="#menu" class="hero-button">
+                    Explore Our Menu
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                    src="images/croissant.jpg"
+                    alt="Freshly baked artisan croissant"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT US -->
+        <section id="about">
+
+            <div class="about-content">
+
+                <span>OUR STORY</span>
+
+                <h2>Good Things Take Time.</h2>
+
+                <p>
+                    At CRUMB STUDIO, we believe every great moment
+                    deserves something freshly baked.
+                </p>
+
+                <p>
+                    Inspired by the art of artisan baking, we celebrate
+                    simple ingredients, thoughtful details, and the joy
+                    of sharing something delicious.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+
+                <img
+                    src="images/sourdough.jpg"
+                    alt="Freshly baked artisan sourdough bread"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT CATALOG -->
+        <section id="menu">
+
+            <h2>Our Menu</h2>
+
+            <p>Discover our freshly baked creations.</p>
+
+            <!-- CATEGORY FILTER -->
+            <div class="filter-buttons">
+
+                <button type="button"
+                    class="filter-btn active"
+                    data-category="All">
+                    All
+                </button>
+
+                <button type="button"
+                    class="filter-btn"
+                    data-category="Pastry">
+                    Pastry
+                </button>
+
+                <button type="button"
+                    class="filter-btn"
+                    data-category="Bread">
+                    Bread
+                </button>
+
+                <button type="button"
+                    class="filter-btn"
+                    data-category="Cake">
+                    Cake
+                </button>
+
+            </div>
+
+            <!-- PRODUCTS APPEAR HERE -->
+            <div id="product-container" class="product-grid"></div>
+
+        </section>
+
+
+        <!-- PRICE TABLE -->
+        
+<!-- PRICE LIST -->
+<section id="price-list" class="editorial-menu">
+
+    <div class="menu-heading">
+        <span>MADE FRESH WITH LOVE</span>
+        <h2>A Taste of Something Special.</h2>
+        <p>Simple ingredients, beautiful creations.</p>
+    </div>
+
+    <div class="editorial-menu-content">
+
+        <div class="menu-category">
+            <h3>Pastries</h3>
+            <div id="pastry-list"></div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Bread</h3>
+            <div id="bread-list"></div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Cakes</h3>
+            <div id="cake-list"></div>
+        </div>
+    
+    </div>
+</section>
+
+<!-- BAKERY PACKAGES SECTION -->
+<section id="packages" class="packages-section">
+
+    <div class="packages-heading">
+        <span>MADE FOR SHARING</span>
+        <h2>A Little Box of Happiness.</h2>
+        <p>More treats, more joy, better value.</p>
+    </div>
+
+    <!-- PACKAGE PHOTOS -->
+    <div class="package-gallery">
+
+        <article class="package-card">
+            <img src="images/little-treat.jpg"
+                 alt="Little Treat bakery package">
+            <h3>Little Treat</h3>
+            <p>Perfect for a little sweet craving.</p>
+        </article>
+
+        <article class="package-card">
+            <img src="images/sweet-duo.jpg"
+                 alt="Sweet Duo bakery package">
+            <h3>Sweet Duo</h3>
+            <p>A sweet moment made for two.</p>
+        </article>
+
+        <article class="package-card">
+            <img src="images/weekend-box.jpg"
+                 alt="Weekend Box bakery package">
+            <h3>Weekend Box</h3>
+            <p>Your weekend deserves something special.</p>
+        </article>
+
+        <article class="package-card">
+            <img src="images/sharing-box.jpg"
+                 alt="Sharing Box bakery package">
+            <h3>Sharing Box</h3>
+            <p>Good things are better when shared.</p>
+        </article>
+
+    </div>
+
+    <!-- PACKAGE DETAILS TABLE -->
+    <div class="package-table-wrapper">
+
+        <table class="package-table">
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Included Items</th>
+                    <th>Servings</th>
+                    <th>Regular Price</th>
+                    <th>Special Price</th>
+                    <th>Discount</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Little Treat</td>
+                    <td>2 Croissants + 1 Cinnamon Roll</td>
+                    <td>2–3</td>
+                    <td>Rp100.000</td>
+                    <td>Rp89.000</td>
+                    <td>11% OFF</td>
+                </tr>
+
+                <tr>
+                    <td>Sweet Duo</td>
+                    <td>2 Croissants + 2 Cakes</td>
+                    <td>2</td>
+                    <td>Rp174.000</td>
+                    <td>Rp155.000</td>
+                    <td>11% OFF</td>
+                </tr>
+
+                <tr>
+                    <td>Weekend Box</td>
+                    <td>3 Croissants + 2 Cinnamon Rolls + 1 Cake</td>
+                    <td>4–5</td>
+                    <td>Rp244.000</td>
+                    <td>Rp219.000</td>
+                    <td>10% OFF</td>
+                </tr>
+
+                <tr>
+                    <td>Sharing Box</td>
+                    <td>4 Croissants + 2 Cakes + 1 Sourdough</td>
+                    <td>5–6</td>
+                    <td>Rp284.000</td>
+                    <td>Rp255.000</td>
+                    <td>10% OFF</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+    
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-content">
+
+        <span class="contact-label">WE'D LOVE TO HEAR FROM YOU</span>
+
+        <h2>Get in Touch.</h2>
+
+        <p>
+            Have a question about our bakery or want to know more
+            about our freshly baked creations? Send us a message.
+        </p>
+
+        <form id="contact-form">
+
+            <input
+                type="text"
+                id="contact-name"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="contact-email"
+                placeholder="Your email"
+                required
+            >
+
+            <textarea
+                id="contact-message"
+                placeholder="How can we help?"
+                rows="4"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message →</button>
+
+            <p class="form-note">
+                CRUMB STUDIO — Fictional Bakery Demo
+            </p>
+
+        </form>
+
+    </div>
+
+    <div class="contact-image">
+
+        <img
+            src="images/chocolate.jpg"
+            alt="Chocolate bakery creation"
+        >
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-brand">
+        <h2>CRUMB STUDIO</h2>
+        <p>Freshly baked, made with love.</p>
+
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+        </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-content">
+
+        <div class="footer-column">
+            <h3>QUICK LINKS</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#price-list">Price List</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>INFORMATION</h3>
+            <p>CRUMB STUDIO</p>
+            <p>Fictional Bakery Demo</p>
+            <p>Created for UTS Pemrograman Web Lanjut</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>OPEN HOURS</h3>
+            <p>Monday – Friday</p>
+            <p>08.00 AM – 05.00 PM</p>
+            <p>Saturday – Sunday</p>
+            <p>09.00 AM – 04.00 PM</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>GET IN TOUCH</h3>
+            <p>Have something to ask?</p>
+            <a href="#contact" class="footer-contact-link">Contact Us →</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 CRUMB STUDIO — Fictional Bakery Demo</p>
+        <p>Created by: REYNADYA SAMPE DATU | NIM: 231111028</p>
+    </div>
+
+</footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
